@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d78a0c4c-615f-4719-87df-78f5f79f92ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/background.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content_script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/popup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/content_script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569482494840</updated>
-      <workItem from="1569482496414" duration="7659000" />
+      <workItem from="1569482496414" duration="10357000" />
     </task>
     <servers />
   </component>

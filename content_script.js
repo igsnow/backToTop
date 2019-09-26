@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 });
 
 function handleCopy() {
-    document.body.scrollTop = 0
+    window.scrollTo(0, 0);
 }
 
 

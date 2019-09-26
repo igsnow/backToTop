@@ -3,17 +3,22 @@ window.data = [];
 
 // 获取当前选项卡ID
 function getCurrentTabId(callback) {
-    chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
-        if (callback) callback(tabs.length ? tabs[0].id : null);
-    });
+    if (!window.data.length) {
+        chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
+            if (callback) callback(tabs.length ? tabs[0].id : null);
+        });
+    }
 }
 
 // 给content.js发送消息
 function sendMessageToContentScript(message, callback) {
     getCurrentTabId((tabId) => {
-        chrome.tabs.sendMessage(tabId, message, function (response) {
+        window.data.push(tabId)
+        console.log(window.data);
+        chrome.tabs.sendMessage(window.data && window.data[0], message, function (response) {
             if (callback) callback(response);
         });
+        clearData()
     });
 }
 
